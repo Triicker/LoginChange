@@ -1,0 +1,121 @@
+body{
+
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, rgb(51, 55, 114), rgb(65, 71, 155));
+}
+.card{
+box-shadow: 1px 1px 5px rgb(2, 43, 131);
+background-color: rgb(201, 196, 196);
+padding: 30px;
+border-radius: 5px
+
+
+
+}
+.card-top{
+  text-align: center
+  
+
+}
+
+.card-group{
+  margin-bottom: 10px;
+}
+
+.card-group > label{
+  width: 100%;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-weight: bold;
+
+}
+
+.card-group > input{
+  border-radius: 5px;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+
+
+
+}
+
+.btn-login{
+background-image: linear-gradient(to right, rgb(51, 55, 114), rgb(65, 71, 155));
+width: 100%;
+border-radius: 20px;
+padding: 15px;
+font-size: 20px;
+outline: 0;
+color: white;
+border: 0px;
+
+}
+
+.btn-login:hover{
+  background-image: linear-gradient(to right, rgb(0, 9, 134), rgb(122, 119, 119));
+
+}
+
+.form {
+  width: 400px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.imglogin{
+  
+  width: 150px;
+  
+}
+
+.title{
+  color: rgb(47, 24, 180);
+  text-shadow: 1px 1px 1px 1px gray;
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100px;    
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-family: open sans-serif;
+  
+}
+form{
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    }
+  }
+
+  form.validate-error {
+    animation: nono 200ms linear, fade paused;
+    animation-iteration-count: 2;
+  }
+  
+  @keyframes nono {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-15%);
+    }
+    70% {
+      transform: translateX(15%);
+    }
+  }
